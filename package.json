@@ -1,0 +1,59 @@
+{
+  "name": "webpack-starter-kit",
+  "version": "2.0.0",
+  "description": "Webpack starter kit",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fosa1990/webpack-starter-kit.git"
+  },
+  "keywords": [],
+  "author": "Anatoliy Sulypa <fosa1990@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luxplanjay/webpack-starter-kit/issues"
+  },
+  "homepage": "https://github.com/Fosa1990/webpack-starter-kit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.4",
+    "css-minimizer-webpack-plugin": "^3.0.0",
+    "eslint": "^8.3.0",
+    "handlebars": "^4.7.7",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^5.3.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "postcss-loader": "^5.3.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.4.1",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3",
+    "webpackbar": "^5.0.0-3"
+  },
+  "lint-staged": {
+    "*.{js, jsx}": "eslint --cache --fix",
+    "*.{js,jsx,css,scss,md}": "prettier --write",
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  }
+}
