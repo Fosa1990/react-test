@@ -1,86 +1,91 @@
-# Webpack Starter Kit
+# Getting Started with Create React App
 
-**Deprecation notice: сборка больше не поддерживается и не обновляется**
+This project was bootstrapped with
+[Create React App](https://github.com/facebook/create-react-app).
 
-Используйте [parcel-project-template](https://github.com/goitacademy/parcel-project-template)
+## Available Scripts
 
-<!-- # Webpack starter kit &middot; [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE) -->
+In the project directory, you can run:
 
-<!-- ## Зависимости
+### `npm start`
 
-На компьютере должена быть установлена LTS-версия
-[Node.js](https://nodejs.org/en/).
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Разработка
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Для быстрого старта необходимо склонировать репозиторий.
+### `npm test`
 
-```shell
-git clone https://github.com/luxplanjay/webpack-starter-kit.git
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests)
+for more information.
 
-Переименовать папку сборки именем вашего проекта.
+### `npm run build`
 
-```shell
-mv webpack-starter-kit имя_проекта
-```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best
+performance.
 
-Затем перейти в папку проекта.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-```shell
-cd имя_проекта
-```
+See the section about
+[deployment](https://facebook.github.io/create-react-app/docs/deployment) for
+more information.
 
-Находясь в папке проекта удалить папку `.git` связанную с репозиторием сборки
-выполнив следующую команду.
+### `npm run eject`
 
-```shell
-npx rimraf .git
-```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Установить все зависимости.
+If you aren’t satisfied with the build tool and configuration choices, you can
+`eject` at any time. This command will remove the single build dependency from
+your project.
 
-```shell
-npm install
-```
+Instead, it will copy all the configuration files and the transitive
+dependencies (webpack, Babel, ESLint, etc) right into your project so you have
+full control over them. All of the commands except `eject` will still work, but
+they will point to the copied scripts so you can tweak them. At this point
+you’re on your own.
 
-И запустить режим разработки.
+You don’t have to ever use `eject`. The curated feature set is suitable for
+small and middle deployments, and you shouldn’t feel obligated to use this
+feature. However we understand that this tool wouldn’t be useful if you couldn’t
+customize it when you are ready for it.
 
-```shell
-npm start
-```
+## Learn More
 
-Во вкладке браузера перейти по адресу
-[http://localhost:4040](http://localhost:4040).
+You can learn more in the
+[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Сборка в продакшен
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Для того чтобы создать оптимизированные файлы для хостинга, необходимо выполнить
-следующую команду. В корне проекта появится папка `build` со всеми
-оптимизированными ресурсами.
+### Code Splitting
 
-```shell
-npm run build
-```
+This section has moved here:
+[https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Deploying/Publishing
+### Analyzing the Bundle Size
 
-Сборка может автоматически деплоить билд на GitHub Pages удаленного (remote)
-репозитория. Для этого необходимо в файле `package.json` отредактировать поле
-`homepage`, заменив имя пользователя и репозитория на свои.
+This section has moved here:
+[https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория"
-```
+### Making a Progressive Web App
 
-После чего в терминале выполнить следующую команду.
+This section has moved here:
+[https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-```shell
-npm run deploy
-```
+### Advanced Configuration
 
-Если нет ошибок в коде и свойство `homepage` указано верно, запустится сборка
-проекта в продакшен, после чего содержимое папки `build` будет помещено в ветку
-`gh-pages` на удаленном (remote) репозитории. Через какое-то время живую
-страницу можно будет посмотреть по адресу указанному в отредактированном
-свойстве `homepage`. -->
+This section has moved here:
+[https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here:
+[https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here:
+[https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
