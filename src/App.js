@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import RadioButtons from './components/RadioButtons';
+import SignUpFormFinal from './components/SignUpFormFinal';
+// import RadioButtons from './components/RadioButtons';
 // import SignUpFormCheckbox from './components/SignUpFormCheckbox';
 // import SignUpForm from './components/SignUpForm';
 // import LoginForm from './components/LoginForm';
@@ -11,7 +12,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <RadioButtons></RadioButtons>
+        <SignUpFormFinal></SignUpFormFinal>
+        {/* <RadioButtons></RadioButtons> */}
         {/* <SignUpFormCheckbox></SignUpFormCheckbox> */}
         {/* <SignUpForm></SignUpForm> */}
         {/* <LoginForm></LoginForm> */}

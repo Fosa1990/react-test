@@ -16,7 +16,7 @@ const INITIAL_STATE = {
   gender: null,
 };
 
-class RadioButtons extends Component {
+class SignUpFormFinal extends Component {
   state = {
     ...INITIAL_STATE,
   };
@@ -36,7 +36,7 @@ class RadioButtons extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    const { login, email, password, agreed, gender } = this.state;
+    const { login, email, password, agreed, gender, age } = this.state;
 
     console.log(`
       Login: ${login}
@@ -44,6 +44,7 @@ class RadioButtons extends Component {
       Password: ${password}
       Agreed: ${agreed}
       Gender: ${gender}
+      Age: ${age}
     `);
 
     // this.props.onSubmit({ ...this.state });
@@ -51,7 +52,7 @@ class RadioButtons extends Component {
   };
 
   render() {
-    const { login, email, password, agreed, gender } = this.state;
+    const { login, email, password, agreed, gender, age } = this.state;
 
     return (
       <form onSubmit={this.handleSubmit}>
@@ -86,15 +87,6 @@ class RadioButtons extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <label>
-            Agree to terms
-            <input
-              type="checkbox"
-              name="agreed"
-              checked={agreed}
-              onChange={this.handleChange}
-            />
-          </label>
 
           <h2>Choose your gender</h2>
           <label>
@@ -117,6 +109,28 @@ class RadioButtons extends Component {
               onChange={this.handleChange}
             />
           </label>
+          <h2>Choose your age</h2>
+          <label>
+            Choose your age
+            <select name="age" value={age} onChange={this.handleChange}>
+              <option value="" disabled>
+                ...
+              </option>
+              <option value="18-25">18-25</option>
+              <option value="26-35">26-35</option>
+              <option value="36+">36+</option>
+            </select>
+          </label>
+          <h2>Agree to terms</h2>
+          <label>
+            Agree to terms
+            <input
+              type="checkbox"
+              name="agreed"
+              checked={agreed}
+              onChange={this.handleChange}
+            />
+          </label>
         </section>
 
         <button type="submit" disabled={!agreed}>
@@ -126,4 +140,4 @@ class RadioButtons extends Component {
     );
   }
 }
-export default RadioButtons;
+export default SignUpFormFinal;
