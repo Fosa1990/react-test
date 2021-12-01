@@ -48,7 +48,8 @@ class SignUpFormFinal extends Component {
     `);
 
     // Проп который передается форме для вызова при сабмите
-    // this.props.onSubmit({ ...this.state });
+    // this.props.onSubmit(this.state);
+    // console.log('this.state: ', this.state);
     this.reset();
   };
 
