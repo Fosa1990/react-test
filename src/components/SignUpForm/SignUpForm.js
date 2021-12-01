@@ -34,7 +34,8 @@ class SignUpForm extends Component {
       Password: ${password}
     `);
 
-    this.props.onSubmit({ ...this.state });
+    // Проп который передается форме для вызова при сабмите
+    // this.props.onSubmit({ ...this.state });
     this.reset();
   };
 

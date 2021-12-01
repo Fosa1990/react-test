@@ -46,8 +46,13 @@ class RadioButtons extends Component {
       Gender: ${gender}
     `);
 
+    // Проп который передается форме для вызова при сабмите
     // this.props.onSubmit({ ...this.state });
-    // this.reset();
+    this.reset();
+  };
+
+  reset = () => {
+    this.setState({ ...INITIAL_STATE });
   };
 
   render() {

@@ -36,8 +36,13 @@ class SignUpFormCheckbox extends Component {
       Agreed: ${agreed}
     `);
 
+    // Проп который передается форме для вызова при сабмите
     // this.props.onSubmit({ ...this.state });
-    // this.reset();
+    this.reset();
+  };
+
+  reset = () => {
+    this.setState({ ...INITIAL_STATE });
   };
 
   render() {
