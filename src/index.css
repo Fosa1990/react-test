@@ -27,3 +27,7 @@ code {
 hr {
   width: 100%;
 }
+
+form {
+  margin: 20px auto;
+}
