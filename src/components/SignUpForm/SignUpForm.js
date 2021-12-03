@@ -47,7 +47,7 @@ class SignUpForm extends Component {
     const { login, email, password } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form autocomplete="off" onSubmit={this.handleSubmit}>
         <label>
           Name
           <input

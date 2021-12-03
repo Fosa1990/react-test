@@ -49,7 +49,7 @@ class SignUpFormCheckbox extends Component {
     const { login, email, password, agreed } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form autocomplete="off" onSubmit={this.handleSubmit}>
         <label>
           Name
           <input

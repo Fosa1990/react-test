@@ -59,7 +59,7 @@ class RadioButtons extends Component {
     const { login, email, password, agreed, gender } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form autocomplete="off" onSubmit={this.handleSubmit}>
         <section>
           <label>
             Name

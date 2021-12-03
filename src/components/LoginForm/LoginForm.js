@@ -27,7 +27,7 @@ class LoginForm extends Component {
     const { login } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form autocomplete="off" onSubmit={this.handleSubmit}>
         <label>
           Name
           <input
