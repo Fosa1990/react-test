@@ -61,7 +61,7 @@ class SignUpFormFinal extends Component {
     const { login, email, password, agreed, gender, age } = this.state;
 
     return (
-      <form autocomplete="off" onSubmit={this.handleSubmit}>
+      <form autoComplete="off" onSubmit={this.handleSubmit}>
         <section>
           <label>
             Name

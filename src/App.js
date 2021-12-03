@@ -8,6 +8,7 @@ import RadioButtons from './components/RadioButtons';
 import SignUpFormFinal from './components/SignUpFormFinal';
 import Lifecycle from './components/Lifecycle';
 import Title from './components/Title';
+import FetchApi from './components/FetchApi';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
         <Title title={'Component: Lifecycle'}></Title>
         <p>Open console (^_^)</p>
         <Lifecycle></Lifecycle>
+        <hr />
+        <Title title={'Component: FetchApi'}></Title>
+        <FetchApi></FetchApi>
       </header>
     </div>
   );

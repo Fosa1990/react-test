@@ -61,7 +61,7 @@ export class Form extends Component {
   render() {
     return (
       <div>
-        <form autocomplete="off" onSubmit={this.handleTodoSubmit}>
+        <form autoComplete="off" onSubmit={this.handleTodoSubmit}>
           <input
             value={this.state.input}
             onChange={this.handleChange}
