@@ -48,7 +48,7 @@ export class FetchApi extends Component {
                 Random cocktail is: <Title title={item.strDrink}></Title>
               </li>
               <img
-                key={item.id + 'img'}
+                key={`${item.idDrink}_img`}
                 loading="lazy"
                 width="150"
                 height="150"
