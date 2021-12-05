@@ -15,6 +15,9 @@ import styled from 'styled-components';
 const LinkRouteStyled = styled(Link)`
   color: var(--yellow);
   text-decoration: none;
+  :hover {
+    text-decoration: underline;
+  }
 `;
 
 const Component1 = () => {
