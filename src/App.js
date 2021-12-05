@@ -21,7 +21,7 @@ const Component1 = () => {
   return (
     <Fragment>
       <hr />
-      <p>
+      <p style={{ backgroundColor: 'var(--yellow)' }}>
         <span style={{ color: 'var(--green)' }}>Routing to: </span>
         <span style={{ color: 'var(--red)' }}>Component "1" </span>
         <span style={{ color: 'var(--white)' }}>watch to URL (^_^)</span>
@@ -34,10 +34,10 @@ const Component2 = () => {
   return (
     <Fragment>
       <hr />
-      <p>
+      <p style={{ backgroundColor: 'var(--white)' }}>
         <span style={{ color: 'var(--green)' }}>Routing to: </span>
         <span style={{ color: 'var(--red)' }}>Component "2" </span>
-        <span style={{ color: 'var(--white)' }}>watch to URL (^_^)</span>
+        <span style={{ color: 'var(--black)' }}>watch to URL (^_^)</span>
       </p>
       <hr />
     </Fragment>
