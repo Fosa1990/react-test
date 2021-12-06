@@ -13,7 +13,7 @@ const Component1 = () => {
         <span style={{ color: 'var(--red)' }}>Component "1" </span>
         <span style={{ color: 'var(--white)' }}>watch to URL (^_^)</span>
       </p>
-      <hr />
+
       <Title title={'Component: FetchApi'}></Title>
       <FetchApi></FetchApi>
       <hr />

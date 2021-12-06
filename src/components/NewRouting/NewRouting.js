@@ -3,12 +3,14 @@ import { Fragment } from 'react';
 import styled from 'styled-components';
 import Component1 from './Component1';
 import Component2 from './Component2';
+import Main from './Main';
 
 const LinkStyled = styled(Link)`
   color: var(--yellow);
   text-decoration: none;
   :hover {
     text-decoration: underline;
+    color: white;
   }
 `;
 
@@ -17,7 +19,7 @@ const NewRouting = () => {
     <Fragment>
       <ul>
         <li>
-          <LinkStyled to="/Main">
+          <LinkStyled to="/main">
             <span style={{ color: 'var(--green)' }}>New React </span>
             Routing: Link to Main
           </LinkStyled>
@@ -37,7 +39,7 @@ const NewRouting = () => {
       </ul>
 
       <Routes>
-        <Route path="/main" element={<Fragment></Fragment>} />
+        <Route path="/main" element={<Main />} />
         <Route path="/component1" element={<Component1 />} />
         <Route path="/component2" element={<Component2 />} />
       </Routes>

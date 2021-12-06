@@ -17,7 +17,6 @@ const Component2 = () => {
         <span style={{ color: 'var(--red)' }}>Component "2" </span>
         <span style={{ color: 'var(--white)' }}>watch to URL (^_^)</span>
       </p>
-      <hr />
 
       <Title title={'Component: Form'}></Title>
       <Form></Form>
