@@ -8,7 +8,7 @@ const Main = () => {
       <hr />
       <p>
         <span style={{ color: 'var(--green)' }}>Routing to: </span>
-        <span style={{ color: 'var(--red)' }}>Main </span>
+        <span style={{ color: 'var(--red)' }}>"Main" </span>
         <span style={{ color: 'var(--white)' }}>watch to URL (^_^)</span>
       </p>
 

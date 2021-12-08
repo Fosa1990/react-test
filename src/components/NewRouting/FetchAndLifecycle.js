@@ -4,13 +4,13 @@ import Title from '../Title';
 import Lifecycle from '../Lifecycle';
 import FetchApi from '../FetchApi';
 
-const Component1 = () => {
+const FetchAndLifecycle = () => {
   return (
     <Fragment>
       <hr />
       <p>
         <span style={{ color: 'var(--green)' }}>Routing to: </span>
-        <span style={{ color: 'var(--red)' }}>Component "1" </span>
+        <span style={{ color: 'var(--red)' }}>"Fetch &amp; Lifecycle" </span>
         <span style={{ color: 'var(--white)' }}>watch to URL (^_^)</span>
       </p>
 
@@ -24,4 +24,4 @@ const Component1 = () => {
   );
 };
 
-export default Component1;
+export default FetchAndLifecycle;

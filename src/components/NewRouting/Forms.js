@@ -1,20 +1,20 @@
 import React from 'react';
 import { Fragment } from 'react';
 import Title from '../Title';
-import Form from '../Form/';
+import Form from '../Form';
 import LoginForm from '../LoginForm';
 import SignUpForm from '../SignUpForm';
 import SignUpFormCheckbox from '../SignUpFormCheckbox';
 import RadioButtons from '../RadioButtons';
 import SignUpFormFinal from '../SignUpFormFinal';
 
-const Component2 = () => {
+const Forms = () => {
   return (
     <Fragment>
       <hr />
       <p>
         <span style={{ color: 'var(--green)' }}>Routing to: </span>
-        <span style={{ color: 'var(--red)' }}>Component "2" </span>
+        <span style={{ color: 'var(--red)' }}>"Forms" </span>
         <span style={{ color: 'var(--white)' }}>watch to URL (^_^)</span>
       </p>
 
@@ -39,4 +39,4 @@ const Component2 = () => {
   );
 };
 
-export default Component2;
+export default Forms;

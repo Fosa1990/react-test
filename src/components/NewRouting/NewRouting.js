@@ -1,10 +1,19 @@
 import { Link, Routes, Route } from 'react-router-dom';
 import { Fragment } from 'react';
 import styled from 'styled-components';
-import Component1 from './Component1';
-import Component2 from './Component2';
+import FetchAndLifecycle from './FetchAndLifecycle';
+import Forms from './Forms';
 import Main from './Main';
 import Error from './Error';
+import RestApi from '../RestApi';
+
+const ListItem = styled.li`
+  list-style-type: circle;
+  :hover {
+    list-style-type: disc;
+    color: var(--yellow);
+  }
+`;
 
 const LinkStyled = styled(Link)`
   color: var(--yellow);
@@ -19,36 +28,46 @@ const NewRouting = () => {
   return (
     <Fragment>
       <ul>
-        <li>
+        <ListItem>
           <LinkStyled to="/main">
-            <span style={{ color: 'var(--green)' }}>New React </span>
-            Routing: Link to Main
+            <span style={{ color: 'var(--green)' }}>New Routing: </span>Main
           </LinkStyled>
-        </li>
-        <li>
-          <LinkStyled to="/component1">
-            <span style={{ color: 'var(--green)' }}>New React </span>
-            Routing: Link to Component 1
+        </ListItem>
+
+        <ListItem>
+          <LinkStyled to="/forms">
+            <span style={{ color: 'var(--green)' }}>New Routing: </span>
+            Forms
           </LinkStyled>
-        </li>
-        <li>
-          <LinkStyled to="/component2">
-            <span style={{ color: 'var(--green)' }}>New React </span>
-            Routing: Link to Component 2
+        </ListItem>
+
+        <ListItem>
+          <LinkStyled to="/fetchandlifecycle">
+            <span style={{ color: 'var(--green)' }}>New Routing: </span>
+            Fetch &amp; Lifecycle
           </LinkStyled>
-        </li>
-        <li>
+        </ListItem>
+
+        <ListItem>
+          <LinkStyled to="/restapi">
+            <span style={{ color: 'var(--green)' }}>New Routing: </span>
+            REST API
+          </LinkStyled>
+        </ListItem>
+
+        <ListItem>
           <LinkStyled to="/error">
-            <span style={{ color: 'var(--green)' }}>New React </span>
-            Routing: Link to Error [not complete yet]
+            <span style={{ color: 'var(--green)' }}>New Routing: </span>Error
+            [not complete yet]
           </LinkStyled>
-        </li>
+        </ListItem>
       </ul>
 
       <Routes>
         <Route path="/main" element={<Main />} />
-        <Route path="/component1" element={<Component1 />} />
-        <Route path="/component2" element={<Component2 />} />
+        <Route path="/forms" element={<Forms />} />
+        <Route path="/fetchandlifecycle" element={<FetchAndLifecycle />} />
+        <Route path="/restapi" element={<RestApi />} />
         <Route path="/error" element={<Error />} />
       </Routes>
     </Fragment>
