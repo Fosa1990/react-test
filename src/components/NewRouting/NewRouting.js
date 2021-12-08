@@ -30,35 +30,35 @@ const NewRouting = () => {
       <ul>
         <ListItem>
           <LinkStyled to="/main">
-            <span style={{ color: 'var(--green)' }}>New Routing: </span>Main
+            <span style={{ color: 'var(--green)' }}>Routing: </span>Main
           </LinkStyled>
         </ListItem>
 
         <ListItem>
           <LinkStyled to="/forms">
-            <span style={{ color: 'var(--green)' }}>New Routing: </span>
+            <span style={{ color: 'var(--green)' }}>Routing: </span>
             Forms
           </LinkStyled>
         </ListItem>
 
         <ListItem>
           <LinkStyled to="/fetchandlifecycle">
-            <span style={{ color: 'var(--green)' }}>New Routing: </span>
+            <span style={{ color: 'var(--green)' }}>Routing: </span>
             Fetch &amp; Lifecycle
           </LinkStyled>
         </ListItem>
 
         <ListItem>
           <LinkStyled to="/restapi">
-            <span style={{ color: 'var(--green)' }}>New Routing: </span>
+            <span style={{ color: 'var(--green)' }}>Routing: </span>
             REST API
           </LinkStyled>
         </ListItem>
 
         <ListItem>
           <LinkStyled to="/error">
-            <span style={{ color: 'var(--green)' }}>New Routing: </span>Error
-            [not complete yet]
+            <span style={{ color: 'var(--green)' }}>Routing: </span>Error [not
+            complete yet]
           </LinkStyled>
         </ListItem>
       </ul>
