@@ -1,7 +1,7 @@
 // https://hn.algolia.com/api
 // https://hn.algolia.com/api/v1/search?query=react
 
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 
@@ -30,6 +30,7 @@ class RestApi extends Component {
   state = {
     articles: [],
     isLoading: false,
+    error: null,
   };
 
   componentDidMount() {
@@ -37,15 +38,21 @@ class RestApi extends Component {
 
     axios
       .get('https://hn.algolia.com/api/v1/search?query=react')
-      .then(response =>
-        this.setState({ articles: response.data.hits, isLoading: false }),
-      );
+      .then(response => this.setState({ articles: response.data.hits }))
+      .catch(error => this.setState({ error }))
+      .finally(() => this.setState({ isLoading: false }));
   }
 
   render() {
-    const { articles, isLoading } = this.state;
+    const { articles, isLoading, error } = this.state;
 
-    return isLoading ? <p>Loading...</p> : <ArticleList articles={articles} />;
+    return (
+      <Fragment>
+        {error && <p>Whoops, something went wrong: {error.message}</p>}
+        {isLoading && <p>Loading...</p>}
+        {articles.length > 0 && <ArticleList articles={articles} />}
+      </Fragment>
+    );
   }
 }
 
