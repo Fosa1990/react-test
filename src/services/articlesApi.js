@@ -6,6 +6,8 @@ const fetchArticlesWithQuery = searchQuery => {
     .then(response => response.data.hits);
 };
 
-export default {
+const fetches = {
   fetchArticlesWithQuery,
 };
+
+export default fetches;
