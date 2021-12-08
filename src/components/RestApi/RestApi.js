@@ -2,7 +2,7 @@
 // https://hn.algolia.com/api/v1/search?query=react
 
 import React, { Component, Fragment } from 'react';
-import axios from 'axios';
+import articlesApi from '../../services/articlesApi';
 import styled from 'styled-components';
 
 const StyledList = styled.ul`
@@ -48,9 +48,9 @@ class RestApi extends Component {
   componentDidMount() {
     this.setState({ isLoading: true });
 
-    axios
-      .get('https://hn.algolia.com/api/v1/search?query=react')
-      .then(response => this.setState({ articles: response.data.hits }))
+    articlesApi
+      .fetchArticlesWithQuery('react')
+      .then(articles => this.setState({ articles }))
       .catch(error => this.setState({ error }))
       .finally(() => this.setState({ isLoading: false }));
   }
