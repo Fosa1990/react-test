@@ -9,7 +9,7 @@ const FetchAndLifecycle = () => {
     <Fragment>
       <hr />
       <p>
-        <span style={{ color: 'var(--green)' }}>Routing to: </span>
+        <span style={{ color: 'var(--green)' }}>Routed to: </span>
         <span style={{ color: 'var(--red)' }}>"Fetch &amp; Lifecycle" </span>
       </p>
 

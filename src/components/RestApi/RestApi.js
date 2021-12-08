@@ -5,7 +5,11 @@ import React, { Component, Fragment } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 
-const ListItem = styled.li`
+const StyledList = styled.ul`
+  margin: 0 20px;
+`;
+
+const StyledListItem = styled.li`
   list-style-type: number;
   :hover {
     list-style-type: number;
@@ -23,15 +27,15 @@ const StyledLink = styled.a`
 `;
 
 const ArticleList = ({ articles }) => (
-  <ul>
+  <StyledList>
     {articles.map(({ objectID, url, title }) => (
-      <ListItem key={objectID}>
+      <StyledListItem key={objectID}>
         <StyledLink href={url} target="_blank" rel="noreferrer noopener">
           {title}
         </StyledLink>
-      </ListItem>
+      </StyledListItem>
     ))}
-  </ul>
+  </StyledList>
 );
 
 class RestApi extends Component {
@@ -58,7 +62,7 @@ class RestApi extends Component {
       <Fragment>
         <hr />
         <p>
-          <span style={{ color: 'var(--green)' }}>Routing to: </span>
+          <span style={{ color: 'var(--green)' }}>Routed to: </span>
           <span style={{ color: 'var(--red)' }}>"REST API" </span>
         </p>
 

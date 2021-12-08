@@ -13,7 +13,7 @@ const Forms = () => {
     <Fragment>
       <hr />
       <p>
-        <span style={{ color: 'var(--green)' }}>Routing to: </span>
+        <span style={{ color: 'var(--green)' }}>Routed to: </span>
         <span style={{ color: 'var(--red)' }}>"Forms" </span>
       </p>
 
