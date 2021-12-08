@@ -29,18 +29,23 @@ const ArticleList = ({ articles }) => (
 class RestApi extends Component {
   state = {
     articles: [],
+    isLoading: false,
   };
 
   componentDidMount() {
+    this.setState({ isLoading: true });
+
     axios
       .get('https://hn.algolia.com/api/v1/search?query=react')
-      .then(response => this.setState({ articles: response.data.hits }));
+      .then(response =>
+        this.setState({ articles: response.data.hits, isLoading: false }),
+      );
   }
 
   render() {
-    const { articles } = this.state;
+    const { articles, isLoading } = this.state;
 
-    return articles.length > 0 ? <ArticleList articles={articles} /> : null;
+    return isLoading ? <p>Loading...</p> : <ArticleList articles={articles} />;
   }
 }
 
