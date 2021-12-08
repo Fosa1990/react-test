@@ -5,8 +5,16 @@ import React, { Component, Fragment } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 
+const ListItem = styled.li`
+  list-style-type: number;
+  :hover {
+    list-style-type: number;
+    color: var(--yellow);
+  }
+`;
+
 const StyledLink = styled.a`
-  color: var(--white);
+  color: var(--blue);
   text-decoration: none;
   :hover {
     text-decoration: underline;
@@ -17,11 +25,11 @@ const StyledLink = styled.a`
 const ArticleList = ({ articles }) => (
   <ul>
     {articles.map(({ objectID, url, title }) => (
-      <li key={objectID}>
+      <ListItem key={objectID}>
         <StyledLink href={url} target="_blank" rel="noreferrer noopener">
           {title}
         </StyledLink>
-      </li>
+      </ListItem>
     ))}
   </ul>
 );
@@ -48,6 +56,12 @@ class RestApi extends Component {
 
     return (
       <Fragment>
+        <hr />
+        <p>
+          <span style={{ color: 'var(--green)' }}>Routing to: </span>
+          <span style={{ color: 'var(--red)' }}>"REST API" </span>
+        </p>
+
         {error && <p>Whoops, something went wrong: {error.message}</p>}
         {isLoading && <p>Loading...</p>}
         {articles.length > 0 && <ArticleList articles={articles} />}

@@ -15,7 +15,6 @@ const Forms = () => {
       <p>
         <span style={{ color: 'var(--green)' }}>Routing to: </span>
         <span style={{ color: 'var(--red)' }}>"Forms" </span>
-        <span style={{ color: 'var(--white)' }}>watch to URL (^_^)</span>
       </p>
 
       <Title title={'Component: Form'}></Title>

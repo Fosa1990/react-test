@@ -11,7 +11,6 @@ const FetchAndLifecycle = () => {
       <p>
         <span style={{ color: 'var(--green)' }}>Routing to: </span>
         <span style={{ color: 'var(--red)' }}>"Fetch &amp; Lifecycle" </span>
-        <span style={{ color: 'var(--white)' }}>watch to URL (^_^)</span>
       </p>
 
       <Title title={'Component: FetchApi'}></Title>
