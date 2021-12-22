@@ -1,5 +1,4 @@
 import React from 'react';
-import { Fragment } from 'react';
 import Title from '../Title';
 import Form from '../Form';
 import LoginForm from '../LoginForm';
@@ -10,7 +9,7 @@ import SignUpFormFinal from '../SignUpFormFinal';
 
 const Forms = () => {
   return (
-    <Fragment>
+    <>
       <hr />
       <p>
         <span style={{ color: 'var(--green)' }}>Routed to: </span>
@@ -34,7 +33,7 @@ const Forms = () => {
       <hr />
       <Title title={'Component: SignUpFormFinal'}></Title>
       <SignUpFormFinal></SignUpFormFinal>
-    </Fragment>
+    </>
   );
 };
 
