@@ -2,11 +2,10 @@ import { createStore, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import counterReducer from './counter/counter-reducer';
 
-const reducer = (state = {}, action) => state;
+// const reducer = (state = {}, action) => state;
 
 const rootReducer = combineReducers({
   counter: counterReducer,
-  todos: reducer,
 });
 
 const store = createStore(rootReducer, composeWithDevTools());
