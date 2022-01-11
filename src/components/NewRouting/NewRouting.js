@@ -4,6 +4,7 @@ import FetchAndLifecycle from './FetchAndLifecycle';
 import Forms from './Forms';
 import Main from './Main';
 import Error from './Error';
+import Counter from '../Counter';
 import RestApi from '../RestApi';
 
 const NewRouting = () => {
@@ -27,6 +28,10 @@ const NewRouting = () => {
         </ListItem>
 
         <ListItem>
+          <LinkStyled to="/counter">Counter</LinkStyled>
+        </ListItem>
+
+        <ListItem>
           <LinkStyled to="/error">Error</LinkStyled>
         </ListItem>
       </List>
@@ -36,6 +41,7 @@ const NewRouting = () => {
         <Route path="/forms" element={<Forms />} />
         <Route path="/fetchandlifecycle" element={<FetchAndLifecycle />} />
         <Route path="/restapi" element={<RestApi />} />
+        <Route path="/counter" element={<Counter />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </>
